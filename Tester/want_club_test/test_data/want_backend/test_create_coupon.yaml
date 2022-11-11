@@ -1,0 +1,175 @@
+-   #新增旺铺券
+  url: "http://dev.hotkidclub.com/api-admin/activity_coupon_backend/couponNew/addCoupon.ctrl" #新增接口
+  method: 'post' #请求方式
+  is_json: False
+  data:
+    "couponType": 3 #优惠券类型，优惠券类型，3-旺铺,7-售货机,8-主题门店,9-天猫,10-京东,12-满减券-微信代金券,13-拼多多,14-支付宝代金券,15-兑换券-微信代金券
+    "showPlatFormType": "HKCAPP,HKCMP"
+    "couponName": "新人券-旺铺"
+    "channelId": 51 #所属渠道id
+    "shopId": 50 #所属店铺id
+    "receiveCheck": 1 #领取限制 0-未限制 1-新人限制 2-会员等级限制 3-所有限制
+#    "memberLevel": 5 #会员限制等级 1-萌新 2-白银 3-黄金 4-铂金 5-钻石
+    "registerDays": 10 #新人注册天数
+    "claimCnt": 4 #领取总数
+    "dailyCnt": 4 #每日限领取总数 0-无限制
+    "personCnt": 1 #每人限领总数 0-无限制
+    "availableTimeType": 0 #有效时间类型 0-固定时段 1-自定义
+    "startAt": "2022-06-16 00:00:00" #开始时间
+    "endAt": "2023-06-30 00:00:00" #结束时间
+    "availableDays": 0 #领取后多少天失效 0-按固定有效期
+    "stillStatus": 0 #使用门槛 0-无门槛 1-有门槛',(0-无限制1-有限制)
+    "overAmount": 0 #(阈值),满足使用条件的金额',(最高立减)
+    "discountAmount": 5 #优惠金额',(实付金额)
+    "wpCampaignId": 10224 #旺铺活动编码
+    "wpCouponId": 2484 #优惠券编码
+    "isAlipayBusinessCoupon": 0 #是否是支付宝商家券，默认为非商家券0
+#    "couponId": "967" # 编辑时，必传的参数
+-    #新增天猫券
+  url: "http://dev.hotkidclub.com/api-admin/activity_coupon_backend/couponNew/addCoupon.ctrl" #新增接口
+  method: "post" #请求方式
+  is_json: False
+  data:
+    "couponType": 9
+    "showPlatFormType": "HKCAPP,HKCMP"
+    "couponName": "新人券-天猫券"
+    "channelId": 57
+    "shopId": 57
+    "receiveCheck": 1
+    "registerDays": 10
+    "claimCnt": 99
+    "dailyCnt": 99
+    "personCnt": 99
+    "availableTimeType": 0
+    "startAt": "2022-06-17 00:00:00"
+    "endAt": "2022-06-30 00:00:00"
+    "availableDays": 0
+    "stillStatus": 1
+    "overAmount": 44
+    "discountAmount": 33
+    "command_tm": "3??￥kK8jcmjOBoM￥回??_桃窇??或點几url链 https://m.tb.cn/h.4eaHInD 至liulanqi【积分兑周边】"
+    "skipUrl_tm": "market.m.taobao.com/app/cem-fe/benefit-exchange/benefit-exchange/index.html?source=InterestsDetail&activityId=3129075"
+    "skipH5Url_tm": "https://market.m.taobao.com/app/cem-fe/benefit-exchange/benefit-exchange/index.html?source=InterestsDetail&activityId=3129075"
+    "isAlipayBusinessCoupon": 0
+-   #新增京东券
+  url: "http://dev.hotkidclub.com/api-admin/activity_coupon_backend/couponNew/addCoupon.ctrl"
+  method: "post"
+  is_json: False
+  data:
+    "couponType": 10
+    "showPlatFormType": "HKCAPP,HKCMP"
+    "couponName": "新人券-京东"
+    "channelId": 56
+    "shopId": 56
+    "receiveCheck": 1
+    "registerDays": 10
+    "claimCnt": 4
+    "dailyCnt": 4
+    "personCnt": 1
+    "availableTimeType": 0
+    "startAt": "2022-06-17 00:00:00"
+    "endAt": "2022-06-30 00:00:00"
+    "availableDays": 0
+    "stillStatus": 0
+    "overAmount": 0
+    "discountAmount": 4
+    "accountId_jd": "gh_863747b5d292"
+    "appid_jd": "wx8dedce62dba410e6"
+    "skipUrl_jd": "pages/index/index"
+    "isAlipayBusinessCoupon": 0
+-   #新增满减券-微信代金券
+  url: "http://dev.hotkidclub.com/api-admin/activity_coupon_backend/couponNew/addCoupon.ctrl"
+  method: "post"
+  is_json: False
+  data:
+    "couponType": 12
+    "showPlatFormType": "HKCAPP,HKCMP"
+    "couponName": "领券区新人-满减券"
+    "channelId": 55
+    "shopId": 72
+    "receiveCheck": 1
+    "registerDays": 10 #新人注册天数
+    "claimCnt": 4
+    "dailyCnt": 4
+    "personCnt": 2
+    "availableTimeType": 0
+    "startAt": "2022-06-17 00:00:00"
+    "endAt": "2023-06-30 00:00:00"
+    "availableDays": 0
+    "stillStatus": 0
+    "overAmount": 2
+    "discountAmount": 1
+    "wxCouponKey": "16704064"  #微信代金券券码
+    "isAlipayBusinessCoupon": 0
+-   #新增满减券-微信代金券
+  url: "http://dev.hotkidclub.com/api-admin/activity_coupon_backend/couponNew/addCoupon.ctrl"
+  method: "post"
+  is_json: False
+  data:
+    "availableDays": 0
+    "availableTimeType": 0
+    "channelId": 55
+    "claimCnt": 4
+    "couponName": "兑换券券"
+    "couponType": 15
+    "dailyCnt": 4
+    "discountAmount": 1
+    "endAt": "2022-06-30 00:00:00"
+    "overAmount": 2
+    "personCnt": 2
+    "productSeriesName": "限燕麦牛奶使用"
+    "receiveCheck": 0
+    "shopId": 72
+    "showPlatFormType": "HKCAPP,HKCMP"
+    "startAt": "2022-06-17 00:00:00"
+    "stillStatus": 1
+    "wxCouponKey": "16489277"
+    "isAlipayBusinessCoupon": 0
+-    #新增售货机券
+  url: "https://dev.hotkidclub.com/api-admin/activity_coupon_backend/couponNew/addCoupon.ctrl"
+  method: "post"
+  is_json: False
+  data:
+    "couponType": 7
+    "showPlatFormType": "HKCAPP,HKCMP"
+    "couponName": "新人券-自动售货机"
+    "channelId": "55"
+    "shopId": "55"
+    "receiveCheck": 0
+    "registerDays": 10
+    "claimCnt": "10"
+    "dailyCnt": "10"
+    "personCnt": "1"
+    "availableTimeType": "0"
+    "startAt": "2022-07-01 00:00:00"
+    "endAt": "2023-07-31 00:00:00"
+    "availableDays": "0"
+    "stillStatus": "1"
+    "overAmount": "4"
+    "discountAmount": "3"
+    "isAlipayBusinessCoupon": 0
+-    #编辑优惠券
+  url: "https://dev.hotkidclub.com/api-admin/activity_coupon_backend/couponNew/updateCoupon.ctrl"
+  method: "post"
+  is_json: True
+  data:
+    "couponId": "987"
+    "couponType": 12
+    "showPlatFormType": "HKCAPP,HKCMP"
+    "couponName": "领券区新人-满减券"
+    "channelId": 55
+    "shopId": 72
+    "receiveCheck": 1
+    "registerDays": 10 #新人注册天数
+    "claimCnt": 99
+    "dailyCnt": 99
+    "personCnt": 1
+    "availableTimeType": 0
+    "startAt": "2022-06-17 00:00:00"
+    "endAt": "2023-06-30 00:00:00"
+    "availableDays": 0
+    "stillStatus": 0
+    "overAmount": 2
+    "discountAmount": 1
+    "wxCouponKey": "16704064"  #微信代金券券码
+    "isAlipayBusinessCoupon": 0

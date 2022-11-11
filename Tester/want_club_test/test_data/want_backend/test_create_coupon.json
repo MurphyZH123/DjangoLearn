@@ -1,0 +1,103 @@
+{
+	"新增旺铺券1":{
+		"method":"post",
+		"url":"http://dev.hotkidclub.com/api-admin/activity_coupon_backend/coupon/update.ctrl",
+		"data":{
+			"typeKey": 3,
+			"avaliableClaim": 99,
+			"dailyCount": 99,
+			"specialName": "旺铺-应该是进行中",
+			"userPeriodType": 2,
+			"limitType": 2,
+			"reachRemind": "领取成功aaaaa～",
+			"supportDisplayArr": "HKCAPP,HKCMP",
+			"unreachRemind": "领取失败～",
+			"flagshoping": "HKCJD",
+			"couponKey": 1223,
+			"discountKey": 674,
+			"externalActivityCode": 10085,
+			"externalCouponCode": 1030,
+			"overAmount": 0,
+			"discountAmount": 0,
+			"periodStartAt": "2021-08-25 00:00:00",
+			"periodEndAt": "2021-10-30 00:00:00",
+			"limitAmount": 99,
+			"userTypeKey": 1
+		}
+    },
+    "新增旺铺券":{
+        "method":"post",
+		"url": "http://dev.hotkidclub.com/api-admin/activity_coupon_backend/coupon/add.ctrl",
+		"data":{
+			"typeKey": 3,
+			"avaliableClaim": 99,
+			"dailyCount": 99,
+			"specialName": "旺铺-应该是进行中",
+			"userPeriodType": 2,
+			"limitType": 2,
+			"reachRemind": "领取成功",
+			"supportDisplayArr": "HKCAPP,HKCMP",
+			"unreachRemind": "领取失败～",
+			"flagshoping": "HKCJD",
+			"externalActivityCode": "10085",
+			"externalCouponCode": "1030",
+			"overAmount": 0,
+			"discountAmount": 0,
+			"periodStartAt": "2021-08-25 00:00:00",
+			"periodEndAt": "2021-10-30 00:00:00",
+			"limitAmount": 99,
+			"userTypeKey": 1
+		}
+    },
+	"新增天猫优惠券": {
+		"method": "post",
+		"url": "http://dev.hotkidclub.com/api-admin/activity_coupon_backend/coupon/add.ctrl",
+		"data": {
+			"typeKey": 9,
+			"avaliableClaim": 99,
+			"dailyCount": 99,
+			"specialName": "天猫-过期券",
+			"userPeriodType": 2,
+			"limitType": 2,
+			"reachRemind": "领取成功～",
+			"supportDisplayArr": "HKCMP,HKCAPP",
+			"unreachRemind": "领取失败～",
+			"flagshoping": "HKCJD",
+			"overAmount": 3,
+			"discountAmount": 1,
+			"tmLink": "2.0fu至本段内容￥eA28c53RKI2￥打開👉τao寶👈或掂击炼接 https://m.tb.cn/h.Vzk4SRm 至浏.览览.器【旺旺哎呦浪味海苔10g*6 原味辣味海苔脆海味办公室即食零食酥脆#】",
+			"redirectContent": "taoquan.taobao.com/coupon/unify_apply.htm?sellerId=1588913126&activityId=64162747e807489c944c33d27e4a3aa6",
+			"tbH5Link": "https://taoquan.taobao.com/coupon/unify_apply.htm?sellerId=1588913126&activityId=64162747e807489c944c33d27e4a3aa6",
+			"periodStartAt": "2021-06-25 00:00:00",
+			"periodEndAt": "2021-07-30 00:00:00",
+			"limitAmount": 1,
+			"userTypeKey": 1
+		}
+	},
+	"新增京东官方券": {
+		"method": "post",
+		"url": "http://dev.hotkidclub.com/api-admin/activity_coupon_backend/coupon/add.ctrl",
+		"data": {
+			"typeKey": 10,
+			"avaliableClaim": 99,
+			"dailyCount": 99,
+			"specialName": "京东-未开始券",
+			"userPeriodType": 2,
+			"limitType": 2,
+			"reachRemind": "领取成功～",
+			"supportDisplayArr": "HKCAPP,HKCMP",
+			"unreachRemind": "领取失败～",
+			"flagshoping": "HKCJD",
+			"overAmount": 3,
+			"discountAmount": 1,
+			"jdLink": "http://coupon.m.jd.com/coupons/show.action?key=63fce68a0efb48b4a4ebcae8794998af&roleId=38507595&to=wangwangshipin.jd.com",
+			"redirectId": "gh_863747b5d292",
+			"jdAppId": "wx8dedce62dba410e6",
+			"pageParams": "pages/coupon/getCoupon/getCoupon?key=6ace20a701054a42aedea702b462575b&roleId=37036263&to=wangwangshipin.jd.com",
+			"periodStartAt": "2022-08-25 00:00:00",
+			"periodEndAt": "2022-10-30 00:00:00",
+			"limitAmount": 1,
+			"userTypeKey": 1
+		}
+	}
+}

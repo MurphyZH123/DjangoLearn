@@ -1,0 +1,10 @@
+-   #创建
+  url: "http://dev.hotkidclub.com/api-admin/intelligent_decision_bak/intelligent_decision_bak/operationPlan/addOrUpdateOperationPlan.ctrl" #新增接口
+  method: 'post' #请求方式
+  is_json: False
+  data:
+      "type": 0,// 保存方式 0:草稿；1:发布
+      "planName":"测试计划", // 计划名称
+      "startTime":"2022-01-01 10:00:00", // 计划开始时间
+      "endTime":"2022-10-01 10:00:00", // 计划结束时间
+      "isSetUpAim":0, // 是否设置目标 1-设置；0-不设置
